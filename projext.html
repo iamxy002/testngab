@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROJECT PERTAMA</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+        margin: 0; padding: 30px; background-color: black;}
+
+        header, footer 
+        {background-color: cyan;
+        color: black; text-align: center; padding: 15px 0; margin-bottom: 20px;}
+
+        .kontainer {display: flex; gap: 20px;}
+
+        .kiri, .kanan 
+        {flex: 1; background-color: cyan; padding: 20px; border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);}
+
+        form input, form textarea 
+        {width: 100%; margin-bottom: 10px; padding: 8px;}
+
+        button 
+        {background-color: white; color: red; padding: 10px; border: none; cursor: pointer;}
+    </style>
+</head>
+<body>
+<header>
+    <h1> PORTOFOLIO ILHAM</h1>
+    <P>SELAMAT DATANG!</P>
+</header>
+
+<div class="kontainer">
+    <div class="kiri">
+        <h2>DATA DIRI</h2>
+        <P><strong>Nama:</strong> Ilham febrian</P>
+        <p><strong>Kelas:</strong> XI TKJ 1</p>
+        <p><strong>Jenis Kelamin</strong> laki-laki</p>
+        <p><strong>Tempat Tanggal lahir:</strong>Jakarta, 4 February 2007</p>
+        <p><strong>Email:</strong>febrianilham58@gmail.com</p>
+        <p><strong>Agama:</strong>Muslim</p>
+
+        <h3>HOBI</h3>
+        <ol>
+            <li>Futsal</li>
+            <li>Sepak Bola</li>
+            <li>Bermain Gitar</li>
+        </ol>
+
+        <h3>INSTAGRAM</h3>
+        <a href="https://www.instagram.com/anothersideiam_/" target="_blank">INSTAGRAM</a>
+
+    </div>
+
+
+    <div class="kanan">
+        <h2>FOTO PROFILE</h2>
+<a href="https://freeimage.host/i/3rsHAPe"><img src="https://iili.io/3rsHAPe.th.jpg" alt="3rsHAPe.th.jpg" border="0"></a>
+        <h2>ISI BIODATA</h2>
+        <form>
+            <label for="NAMA">Nama</label>
+            <input type="text" name="nama">
+            <label for="EMAIL">Email</label>
+            <input type="email" name="email">
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" rows="4"></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+     </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ilham Febrian</p>
+    </footer>
+    
+</body>
+</html>
