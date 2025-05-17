@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTOFOLIO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: cyan;
+            color: black;
+        }
+
+        section {
+            padding: 60px 30px;
+        }
+
+        #home {
+            text-align: center;
+            background: linear-gradient(45deg, cyan, violet,);
+            color: black;
+        }
+
+        .biodata .card {
+            flex: auto;
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+            transition: transform 0.3;
+            justify-content: center;
+        }
+
+        .biodata .card:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-hobi {
+            display: grid;
+            grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-hobi div {
+            background: cyan;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            background: brown;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            color: black;
+        }
+
+        @media (max-width: 600px){
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Ilham Febrian</div>
+        <div class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#biodata">BIODATA</a>
+            <a href="#hobi"></a>
+            <a href="#kontak"></a>
+    </nav>
+
+    <section id="home">
+        <h1>SELAMA DATANG DISINI</h1>
+        <p>ORANG GANTENG LAGI BELAJAR NI BROK :V</p>
+    </section>
+
+    <section id="BIODATA">
+        <h2 style="text-align: center;">biodata</h2>
+        <div class="biodata">
+        <div class="card">
+        <p><strong>NAMA:</strong>Ilham Febrian</p>
+        <p><strong>KELAS:</strong>IX TKJ 1</p>
+        <p><strong>TTL:</strong>Jakrta, 04 February 2007</p>
+        <p><strong>EMAIL:</strong>Febrianilham58@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <a href="https://freeimage.host/i/3rsHAPe"><img src="https://iili.io/3rsHAPe.th.jpg" alt="3rsHAPe.th.jpg" width="100%"></a>
+            </div>
+    </section>
+
+    <section class="hobi">
+        <h2 style="text-align: center;">HOBI&SOSMED</h2>
+        <div class="grid-hobi">
+            <div>FUTSAL</div>
+            <div>MAIN GITAR</div>
+            <div>SEPAK BOLA</div>
+            <div><a href="https://www.instagram.com/anothersideiam_/">INSTAGRAM</a></div>
+            <div><a href="https://www.youtube.com/@febrianilham58">YOUTUBE</a></div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2 style="text-align: center;">KONTAK</h2>
+        <form>
+            <input type="text" placeholder="Nama Kamu">
+            <input type="email" placeholder="Email Kamu">
+            <textarea placeholder="Pesan" rows="4"></textarea>
+            <button type="submit">KIRIM</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ILHAM FEBRIAN. All Right Reserved</p>
+    </footer>
+    
+</body>
+</html>
